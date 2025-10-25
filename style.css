@@ -29,7 +29,15 @@
     html {
       scroll-behavior: smooth;
     }
-
+    
+     
+   .logo{
+    height: 50px; 
+   }
+  
+   .headinglogo{
+    display: flex;
+   }
     /* Header */
     header {
       background: rgba(30, 64, 175, 0.95);
@@ -51,7 +59,9 @@
     }
 
     .nav-container {
-      display: flex;
+  
+      display: flex 
+      ;
       justify-content: space-between;
       align-items: center;
       max-width: 1200px;
@@ -62,6 +72,8 @@
       font-size: 1.8rem;
       font-weight: 700;
       letter-spacing: -0.02em;
+      padding-left: 10px;
+      font-family:Playfair Display;
     }
 
     nav {
@@ -76,6 +88,7 @@
       transition: all 0.3s ease;
       position: relative;
       padding: 0.5rem 0;
+
     }
 
     nav a:hover {
