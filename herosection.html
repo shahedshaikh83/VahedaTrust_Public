@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAHEDA Trust — Hero Section</title>
+<style>
+body {margin:0; font-family: Arial,sans-serif; background:#f4f6f9; overflow-x:hidden;}
+header {display:flex; justify-content:space-between; align-items:center; padding:12px 24px; background:#1A237E; color:white; position:sticky; top:0; z-index:100;}
+.logo {font-weight:800; font-size:1.5rem;}
+nav a {color:white; text-decoration:none; margin-left:20px; font-weight:600;}
+nav a:hover {text-decoration:underline;}
+
+.hero {position:relative; height:100vh; overflow:hidden;}
+.slides-container {display:flex; transition: transform 3s ease-in-out; height:100%;}
+.slide {min-width:100%; height:100vh; position:relative; flex-shrink:0; overflow:hidden;}
+.slide img {width:100%; height:100%; object-fit:cover; transition: transform 1.2s ease;}
+.slide-text {
+  position:absolute; bottom:30%; left:50%; transform:translateX(-50%) translateY(50px);
+  background:rgba(0,0,0,0.5); padding:20px; border-radius:12px; max-width:80%;
+  text-align:center; color:white; opacity:0; transition: all 2s ease;
+}
+.slide.active .slide-text {opacity:1; transform:translateX(-50%) translateY(0);}
+.slide-text h2 {font-size:2.5rem; margin:0 0 12px; color:#FFC107; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);}
+.slide-text p {font-size:1.3rem; margin:0; text-shadow: 1px 1px 6px rgba(0,0,0,0.7);}
+.buttons {margin-top:16px;}
+.btn {background:#FFC107; color:#1A237E; padding:12px 22px; margin:4px; border:none; border-radius:8px; font-weight:700; cursor:pointer; transition:0.3s;}
+.btn:hover {transform:scale(1.1); background:#FFB300;}
+
+.dots {position:absolute; bottom:15px; left:50%; transform:translateX(-50%); display:flex; gap:10px; z-index:10;}
+.dot {width:12px; height:12px; border-radius:50%; background:white; opacity:0.5; cursor:pointer; transition:0.3s;}
+.dot.active {opacity:1; transform:scale(1.3);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">VAHEDA Trust</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Success Stories</a>
+    <a href="#">Programs</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="slides-container" id="slides">
+    <!-- 10 slides -->
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1400" alt="Community Learning">
+      <div class="slide-text">
+        <h2>Bridging Education, Technology & Leadership</h2>
+        <p>Empowering Muslim students with Islamic values and modern education.</p>
+        <div class="buttons">
+          <button class="btn">Explore Programs</button>
+          <button class="btn">Success Stories</button>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400" alt="AI Learning">
+      <div class="slide-text">
+        <h2>Future Leaders in AI</h2>
+        <p>Hands-on AI and IT training for young learners.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2022/06/29/17/46/watercolor-7292245_1280.jpg" alt="Leadership Workshop">
+      <div class="slide-text">
+        <h2>Leadership Workshops</h2>
+        <p>Developing leadership and civic skills in youth.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_1280.jpg" alt="Community Service">
+      <div class="slide-text">
+        <h2>Community Service</h2>
+        <p>Engaging students in local community projects.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2018/09/11/19/49/education-3670453_1280.jpg" alt="Scholarship Programs">
+      <div class="slide-text">
+        <h2>Scholarship & Mentorship</h2>
+        <p>Helping talented students access higher education.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_1280.jpg" alt="Coding Bootcamp">
+      <div class="slide-text">
+        <h2>Coding Bootcamps</h2>
+        <p>Intensive IT and coding sessions for practical skills.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2023/01/02/21/11/conference-7693055_1280.jpg" alt="Community Events">
+      <div class="slide-text">
+        <h2>Community Events</h2>
+        <p>Workshops, seminars, and events to inspire students.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2018/05/14/13/37/little-girl-3399990_1280.jpg" alt="Mentorship">
+      <div class="slide-text">
+        <h2>Mentorship Programs</h2>
+        <p>Guiding students to achieve academic and personal success.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2015/06/24/15/45/hands-820272_1280.jpg" alt="Digital Skills">
+      <div class="slide-text">
+        <h2>Digital Skills Training</h2>
+        <p>Teaching essential digital skills for modern careers.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://cdn.pixabay.com/photo/2017/10/04/09/56/chemist-2815640_1280.jpg" alt="Innovation Lab">
+      <div class="slide-text">
+        <h2>Innovation Lab</h2>
+        <p>Hands-on experiments to encourage creativity and problem solving.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots" id="dots"></div>
+</section>
+
+<script>
+const container = document.getElementById('slides');
+let slides = Array.from(container.children);
+
+// Clone first and last for infinite loop
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides[slides.length-1].cloneNode(true);
+container.appendChild(firstClone);
+container.insertBefore(lastClone, slides[0]);
+slides = Array.from(container.children);
+
+let index = 1;
+container.style.transform = `translateX(-${index*100}%)`;
+slides[index].classList.add('active');
+
+// Create dots
+const dotsContainer = document.getElementById('dots');
+for(let i=0;i<slides.length-2;i++){
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  if(i===0) dot.classList.add('active');
+  dot.addEventListener('click', ()=>{
+    slides[index].classList.remove('active');
+    index = i+1;
+    slides[index].classList.add('active');
+    container.style.transition='transform 1s ease-in-out';
+    container.style.transform=`translateX(-${index*100}%)`;
+    resetInterval();
+    updateDots();
+  });
+  dotsContainer.appendChild(dot);
+}
+
+function updateDots(){
+  const dots = dotsContainer.children;
+  for(let d of dots) d.classList.remove('active');
+  dots[index-1].classList.add('active');
+}
+
+function moveSlide(dir=1){
+  slides[index].classList.remove('active');
+  index += dir;
+  slides[index].classList.add('active');
+  container.style.transition = 'transform 1s ease-in-out';
+  container.style.transform = `translateX(-${index*100}%)`;
+  updateDots();
+}
+
+// Infinite loop handling
+container.addEventListener('transitionend', ()=>{
+  if(index === slides.length-1){ 
+    container.style.transition = 'none';
+    index = 1;
+    container.style.transform = `translateX(-${index*100}%)`;
+    slides.forEach(s=>s.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+  if(index === 0){ 
+    container.style.transition = 'none';
+    index = slides.length-2;
+    container.style.transform = `translateX(-${index*100}%)`;
+    slides.forEach(s=>s.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+});
+
+// Auto slide
+let interval = setInterval(()=>moveSlide(1), 6000);
+function resetInterval(){ clearInterval(interval); interval = setInterval(()=>moveSlide(1), 4000); }
+</script>
+
+</body>
+</html>
