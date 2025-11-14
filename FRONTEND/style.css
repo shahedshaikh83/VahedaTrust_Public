@@ -1,5 +1,4 @@
-
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -323,6 +322,9 @@
     }
 
     .card {
+      display: block; /* allow anchor cards to behave like block cards */
+      text-decoration: none;
+      color: inherit;
       position: relative;
       height: 350px;
       border-radius: 20px;
@@ -370,6 +372,10 @@
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
     }
 
+     
+
+
+
     /* Background images for each card */
     .card:nth-child(1)::before {
       background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=800');
@@ -390,6 +396,8 @@
     .card:nth-child(5)::before {
       background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800');
     }
+
+    
 
     .card-content {
       position: relative;
@@ -424,6 +432,8 @@
     .card:hover p {
       opacity: 1;
     }
+
+    
 
     /* Icon overlay */
     .card-icon {
@@ -598,4 +608,3 @@
         gap: 1.5rem;
       }
     }
-  
